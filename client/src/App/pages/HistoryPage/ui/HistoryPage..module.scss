@@ -1,0 +1,31 @@
+.history {
+    width: 100%;
+}
+
+.footer_history {
+    position: relative;
+    width: 1536px;
+    height: 210px;
+    margin-left: -120px;
+    margin-top: 86px;
+    background-image: url(../../../shared/assets/png/bg_footer_history.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden; 
+}
+
+.footer_history::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); 
+    z-index: 1;
+}
+
+.footer_history > div {
+    position: relative; 
+    z-index: 2; 
+}
