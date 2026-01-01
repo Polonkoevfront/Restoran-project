@@ -1,14 +1,8 @@
 .home {
-    width: 100%; 
+    width: 100%;
+    height: 100vh;
     background-image: url(../../../shared/assets/png/home.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh; 
+    overflow: hidden;
 }
-
-.logo {
-    position: absolute;
-    top: 50px;
-    left: 165px;
-}
-
