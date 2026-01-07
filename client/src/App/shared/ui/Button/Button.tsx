@@ -11,6 +11,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant;
   size?: ButtonSize;
   max?: boolean;
+  onClick?: () => void;
 }
 
 export const Button: FC<ButtonProps> = (props) => {
@@ -21,6 +22,7 @@ export const Button: FC<ButtonProps> = (props) => {
     className,
     disabled,
     max = false,
+    onClick
   } = props;
 
   const variantClasses: Record<ButtonVariant, string> = {
@@ -41,7 +43,7 @@ export const Button: FC<ButtonProps> = (props) => {
   };
 
   return (
-    <button disabled={disabled} className={classNames(cls.btn, mods, classes)}>
+    <button onClick={onClick} disabled={disabled} className={classNames(cls.btn, mods, classes)}>
       {children}
     </button>
   );

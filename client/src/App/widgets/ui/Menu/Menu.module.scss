@@ -1,0 +1,67 @@
+.menu {
+    position: absolute;
+    top: 322px;
+    left: 175px;
+
+    .btn {
+        display: block;
+        width: 137px;
+        height: 47px;
+        color: #ffffff;
+        background: #FF7400;
+        margin-left: 180px;
+        margin-top: 21px;
+        transition: all 0.5s ease;
+        position: absolute;
+
+        &:hover {
+            background: #9d4700;
+        }
+    }
+
+    .modals_block {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 45px;
+        margin-top: -300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 28px;
+
+        article {
+            width: 240px;
+            height: 229px;
+            background: #fff;
+
+            img {
+                margin-top: 27px;
+            }
+
+            div {
+                margin-top: 4px;
+
+                span {
+                    color: #000;
+                    font-size: 15px;
+                    font-weight: 400;
+                }
+
+                p {
+                    color: #656363;
+                    font-size: 15px;
+                    font-weight: 400;
+                }
+
+                .text {
+                    color: #BC9060;
+                }
+
+                .desc {
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+}
