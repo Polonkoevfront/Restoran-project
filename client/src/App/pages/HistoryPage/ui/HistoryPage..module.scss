@@ -1,20 +1,130 @@
 .history {
     width: 100%;
-}
-
-.footer_history {
+    height: 100vh;
     position: relative;
-    width: 1536px;
-    height: 210px;
-    margin-left: -120px;
-    margin-top: 86px;
-    background-image: url(../../../shared/assets/png/bg_footer_history.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
+
+    .btn_ret {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        margin-left: -63px;
+        margin-top: -79px;
+
+        span {
+            font-size: 15px;
+            font-weight: 500;
+            margin-left: 7px;
+        }
+
+        img {
+            width: 40px;
+            cursor: pointer;
+            margin-left: 10px;
+            margin-top: 0;
+        }
+    }
+
+    .history_body {
+        position: relative;
+        margin-top: 90px;
+
+        .history_txt {
+            display: flex;
+            flex-direction: column;
+            margin-left: -65px;
+
+            img {
+                width: 320px;
+                height: 55px;
+                margin-left: 157px;
+                margin-top: 30px;
+            }
+
+            .history_desc {
+                text-align: center;
+                margin-right: 730px;
+                margin-top: 20px;
+
+                span {
+                    display: block;
+                    color: gray;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .menu_eats {
+        display: flex;
+        gap: 41px;
+        position: absolute;
+        margin-left: 100px;
+        margin-top: 59px;
+
+        .eat_item {
+            color: #BC9060;
+            text-align: center;
+
+            span {
+                display: block;
+                color: #000;
+                font-size: 20px;
+                font-weight: 300;
+            }
+        }
+    }
+
+    img {
+        margin-left: 798px;
+        margin-top: -278px;
+    }
+
+    footer {
+        position: relative;
+        width: 1488px;
+        height: 357px;
+        background-image: url(../../../shared/assets/png/bg_footer_history.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left: -120px;
+        margin-top: 192px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            margin-left: -701px;
+            margin-top: 290px;
+
+            img {
+                width: 601px;
+                margin-left: 0px;
+            }
+
+            span {
+                color: #ffffff;
+                font-size: 23px;
+                font-weight: 700;
+                margin-left: 26px;
+                margin-top: 20px;
+
+            }
+        }
+
+        .footer_btn {
+            z-index: 1;
+            margin-left: 1051px;
+        }
+    }
 }
 
-.footer_history::before {
+footer::before {
     content: "";
     position: absolute;
     top: 0;
@@ -25,7 +135,6 @@
     z-index: 1;
 }
 
-.footer_history>div {
-    position: relative;
+footer>div {
     z-index: 2;
 }

@@ -1,12 +1,65 @@
 .dishes {
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 100vh;
-}
+    position: relative;
 
-.images_dishes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+    .ret,
+    .ret2 {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-left: -1365px;
+        margin-top: 11px;
 
+        span {
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        img {
+            width: 40px;
+            margin-left: 3px;
+        }
+    }
+
+    .ret2 {
+        position: absolute;
+        margin-left: 1363px;
+    }
+
+    .dishes_wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .images_dishes {
+            display: flex;
+            margin-top: 50px;
+
+            .burgers_block {
+                margin-left: 19px;
+                margin-top: 25px;
+
+                .burger_item,
+                .burger_item2 {
+
+                    img {
+                        width: 104.5px;
+                        height: 104.5px;
+                    }
+
+                    span {
+                        margin-left: 19px;
+                    }
+                }
+
+                .burger_item2 {
+                    margin-top: 19px;
+                }
+            }
+        }
+    }
+}

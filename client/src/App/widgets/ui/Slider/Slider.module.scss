@@ -1,0 +1,49 @@
+@import "../../../styles/variables.scss";
+
+.reviews_wrap {
+
+    .reviews_block {
+        margin-left: 145px;
+        margin-top: 970px;
+
+        .carousel_logo {
+            color: $outline-color;
+            position: absolute;
+            margin-left: 390px;
+            margin-top: -140px;
+        }
+
+        .carousel_item {
+            width: 1000px;
+            height: 450px;
+            background: #E5E5E5;
+
+            .carousel_desc {
+                display: inline-block;
+                position: absolute;
+                margin-left: 165px;
+                margin-top: 80px;
+
+                span {
+                    display: block;
+                    text-align: center;
+                }
+            }
+
+            img {
+
+                width: 70px;
+                height: 70px;
+                margin-left: 468px;
+                margin-top: 190px;
+                object-fit: cover;
+            }
+        }
+
+        .text_carousel {
+            text-align: center;
+            margin-left: 1px;
+            margin-top: 15px;
+        }
+    }
+}
