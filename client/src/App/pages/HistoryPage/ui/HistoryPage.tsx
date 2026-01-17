@@ -19,8 +19,11 @@ export const HistoryPage = () => {
           </Link>
         </div>
         <div className={cls.history_body}>
-          <div className={cls.history_txt}>
-            <img src={history_text} alt="" />
+          <div className={cls.history_txt_block}>
+            <div className={cls.logo_block}>
+              <Text className={cls.logo} as='h1' fz={49} fw={400}>Наша</Text>
+              <Text className={cls.logo2} as='h1' fz={49} fw={400}>История</Text>
+            </div>
 
             <div className={cls.history_desc}>
               <span>Как и у любого другого самобытного места, у нас есть</span>

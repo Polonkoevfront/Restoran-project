@@ -5,6 +5,7 @@ import chef2 from '../../../shared/assets/png/chef2.png'
 import chef3 from '../../../shared/assets/png/chef3.png'
 import arrow_left from "../../../shared/assets/png/left.png";
 import { Link } from 'react-router-dom'
+import { Form } from '../../../shared/ui/Form/Form';
 
 export const СhefsPage = () => {
     return (

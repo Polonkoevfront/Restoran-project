@@ -3,7 +3,7 @@ import cls from "./Button.module.scss";
 import { classNames, Mods } from "../../lib/classNames";
 
 type ButtonVariant = "default" | "primary";
-type ButtonSize = "l" | "m" | "s";
+type ButtonSize = "l" | "m" | "s" | "b";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
@@ -33,6 +33,7 @@ export const Button: FC<ButtonProps> = (props) => {
     l: cls.l,
     m: cls.m,
     s: cls.s,
+    b: cls.b,
   };
 
   const classes: any = [variant && variantClasses[variant], [size && sizeClasses[size]], className];

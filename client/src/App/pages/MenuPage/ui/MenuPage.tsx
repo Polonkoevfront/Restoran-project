@@ -36,6 +36,7 @@ export const MenuPage = () => {
         <>
             <div className={cls.menu}>
                 <div className="container">
+                    <Card image="" title="" description="" />
                     <div className={cls.menu_wrap}>
                         <h6 style={{ position: "absolute", top: "", left: "", color: "#ffffff", marginLeft: "-55px", marginTop: "30px" }}>Назад</h6>
                         <Link to="/">
@@ -57,22 +58,8 @@ export const MenuPage = () => {
                                     <Button sx={{ width: "175px", height: "40px", background: "#D67E34", color: "#ffffff", marginLeft: "60px", marginTop: "20px", borderRadius: "", transition: "all 0.3s ease", "&:hover": { background: "#9b4600" } }}>ЗАКАЗАТЬ</Button>
                                 </div>
                             </article>
-                            <article onClick={() => onOpen(2)} className={cls.card_menu}>
-                                <img style={{ cursor: "pointer" }} className={cls.burger_card} src={burger} alt="" />
-                                <div style={{ marginTop: "27px" }} className={cls.price_menu}>
-                                    <h3 style={{ display: "flex", alignItems: "center", justifyContent: "center", fontSize: "20px", fontWeight: "500" }}>Гамбургер макси</h3>
-                                    <Typography style={{ fontSize: "13.5px", textAlign: "center" }}>Максимально толстый <span style={{ display: "block" }}>слой мяса</span></Typography>
-                                    <Button sx={{ width: "175px", height: "40px", background: "#D67E34", color: "#ffffff", marginLeft: "60px", marginTop: "20px", borderRadius: "", transition: "all 0.3s ease", "&:hover": { background: "#9b4600" } }}>ЗАКАЗАТЬ</Button>
-                                </div>
-                            </article>
-                            <article onClick={() => onOpen(3)} className={cls.card_menu}>
-                                <img style={{ cursor: "pointer" }} className={cls.burger_card} src={burger} alt="" />
-                                <div style={{ marginTop: "27px" }} className={cls.price_menu}>
-                                    <h3 style={{ display: "flex", alignItems: "center", justifyContent: "center", fontSize: "20px", fontWeight: "500" }}>Гамбургер макси</h3>
-                                    <Typography style={{ fontSize: "13.5px", textAlign: "center", }}>Максимально толстый <span style={{ display: "block" }}>слой мяса</span></Typography>
-                                    <Button sx={{ width: "175px", height: "40px", background: "#D67E34", color: "#ffffff", marginLeft: "60px", marginTop: "20px", borderRadius: "", transition: "all 0.3s ease", "&:hover": { background: "#9b4600" } }}>ЗАКАЗАТЬ</Button>
-                                </div>
-                            </article>
+                            <Card onClick={() => onOpen(1)} image="" title="" description="" />
+
                             {showModalCard === 1 && (
                                 <Modal sx={{ position: "absolute", top: "300px", left: "600px", }}
                                     open={showModalCard === 1}

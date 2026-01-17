@@ -27,9 +27,9 @@
         align-items: center;
 
         .chefs_logo {
-            width: 300px;
+            width: 230px;
             position: absolute;
-            margin-top: 120px;
+            margin-top: 150px;
         }
 
         section {
@@ -40,11 +40,66 @@
             gap: 32px;
 
             img {
-                width: 340px;
+                width: 300px;
             }
 
             .chefs3 {
-                width: 338px;
+                width: 300px;
+            }
+        }
+    }
+}
+
+@media (min-width: 922px) and (max-width: 1199px) {
+
+    .chefs {
+        position: relative;
+
+        .ret {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: absolute;
+            left: 16px;
+            top: 11px;
+
+            span {
+                font-size: 14px;
+                font-weight: 500;
+            }
+
+            img {
+                width: 35px;
+                margin-left: 3px;
+            }
+        }
+
+        .chefs_wrap {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .chefs_logo {
+                width: 200px;
+                position: absolute;
+                margin-top: 150px;
+            }
+
+            section {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 280px;
+                gap: 32px;
+
+                img {
+                    width: 250px;
+                }
+
+                .chefs3 {
+                    width: 250px;
+                }
             }
         }
     }

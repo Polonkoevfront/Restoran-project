@@ -2,24 +2,31 @@
     border: none;
 
     &.s {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 700;
         width: 137px;
-        height: 47px;
+        height: 43px;
     }
 
     &.m {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 700;
         width: 157px;
-        height: 47px;
+        height: 43px;
+    }
+
+    &.b {
+        font-size: 16px;
+        font-weight: 700;
+        width: 175px;
+        height: 43px;
     }
 
     &.l {
         font-size: 16px;
         font-weight: 700;
         width: 220px;
-        height: 50px;
+        height: 43px;
     }
 
     &.primary {
@@ -39,5 +46,59 @@
 
     &.max {
         width: 100px;
+    }
+}
+
+@media(min-width: 992px) and (max-width: 1199px) {
+
+    .btn {
+        border: none;
+
+        &.s {
+            font-size: 14px;
+            font-weight: 600;
+            max-width: 116px;
+            max-height: 41px;
+        }
+
+        &.m {
+            font-size: 14px;
+            font-weight: 600;
+            width: 140px;
+            height: 41px;
+        }
+
+        &.b {
+            font-size: 14px;
+            font-weight: 600;
+            width: 175px;
+            height: 41px;
+        }
+
+        &.l {
+            font-size: 16px;
+            font-weight: 700;
+            width: 220px;
+            height: 41px;
+        }
+
+        &.primary {
+            color: #ffffff;
+            background: #FF7400;
+            transition: all 0.5s ease;
+
+            &:hover {
+                background: #9d4700;
+            }
+        }
+
+        &.default {
+            color: #ffffff;
+            background: #D67E34;
+        }
+
+        &.max {
+            width: 100px;
+        }
     }
 }

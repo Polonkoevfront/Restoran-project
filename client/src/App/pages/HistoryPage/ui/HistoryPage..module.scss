@@ -1,3 +1,14 @@
+@import "../../../styles/variables.scss";
+
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
 .history {
     width: 100%;
     height: 100vh;
@@ -82,12 +93,12 @@
 
     footer {
         position: relative;
-        width: 1488px;
+        width: 100vw;
         height: 357px;
         background-image: url(../../../shared/assets/png/bg_footer_history.png);
         background-repeat: no-repeat;
         background-size: cover;
-        margin-left: -120px;
+        margin-left: -14px;
         margin-top: 192px;
         display: flex;
         align-items: center;
@@ -137,4 +148,318 @@ footer::before {
 
 footer>div {
     z-index: 2;
+}
+
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+
+    .history {
+        max-width: 100vw;
+        height: 100vh;
+        overflow-x: clip;
+        box-sizing: border-box;
+        position: relative;
+
+        .btn_ret {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            left: 5.4%;
+            top: 0;
+
+            span {
+                font-size: 15px;
+                font-weight: 500;
+                margin-left: 7px;
+            }
+
+            img {
+                width: 40px;
+                cursor: pointer;
+                margin-left: 10px;
+                margin-top: 0;
+            }
+        }
+
+        .history_body {
+            position: relative;
+            margin-top: 90px;
+
+            .history_txt_block {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+
+                .logo_block {
+                    display: flex;
+                    margin-left: 5%;
+                    margin-top: 30px;
+
+                    .logo2 {
+                        color: $primary-color;
+                        margin-left: 10px;
+                    }
+                }
+
+                .history_desc {
+                    text-align: center;
+                    margin-right: 65%;
+                    margin-top: 10px;
+
+                    span {
+                        display: block;
+                        color: gray;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .menu_eats {
+            display: flex;
+            position: absolute;
+            margin-left: 5%;
+            margin-top: 59px;
+            gap: 41px;
+
+            .eat_item {
+                color: #BC9060;
+                text-align: center;
+
+                span {
+                    display: block;
+                    color: #000;
+                    font-size: 20px;
+                    font-weight: 300;
+                }
+            }
+        }
+
+        footer {
+            position: relative;
+            width: 100vw;
+            height: 357px;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+
+            background-image: url(../../../shared/assets/png/bg_footer_history.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10.8%;
+            box-sizing: border-box;
+
+
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                margin: -95px;
+
+                img {
+                    width: 100%;
+                    width: 601px;
+                    margin: 0;
+                }
+
+                span {
+                    color: #ffffff;
+                    font-size: 23px;
+                    font-weight: 700;
+                    margin-left: 10px;
+                    margin-top: 20px;
+                }
+            }
+
+            .footer_btn {
+                z-index: 1;
+                margin: 0;
+            }
+        }
+    }
+
+    footer::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1;
+    }
+
+    footer>div {
+        z-index: 2;
+    }
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .history {
+        max-width: 100vw;
+        height: 100vh;
+        overflow-x: clip;
+        box-sizing: border-box;
+        position: relative;
+
+        .btn_ret {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            left: 5.4%;
+            top: 0;
+
+            span {
+                font-size: 15px;
+                font-weight: 500;
+                margin-left: 7px;
+            }
+
+            img {
+                width: 40px;
+                cursor: pointer;
+                margin-left: 10px;
+                margin-top: 0;
+            }
+        }
+
+        .history_body {
+            position: relative;
+            margin-top: 90px;
+
+            .history_txt_block {
+                display: flex;
+                flex-direction: column;
+                margin-left: 3%;
+                position: relative;
+
+                .logo_block {
+                    display: flex;
+                    margin-left: 5%;
+                    margin-top: 30px;
+                    gap: 10px;
+
+                    .logo {
+                        font-size: 36px;
+                    }
+
+                    .logo2 {
+                        color: $primary-color;
+                        font-size: 36px;
+                    }
+                }
+
+                .history_desc {
+                    margin-right: 53%;
+                    margin-top: 10px;
+
+                    span {
+                        color: gray;
+                    }
+                }
+            }
+        }
+
+        .menu_eats {
+            display: flex;
+            position: absolute;
+            margin-left: 5%;
+            margin-top: 59px;
+            gap: 41px;
+
+            .eat_item {
+                color: #BC9060;
+                font-size: 36px;
+                text-align: center;
+
+                span {
+                    display: block;
+                    color: #000;
+                    font-size: 16px;
+                    font-weight: 300;
+                }
+            }
+        }
+
+        img[src*="images"] {
+            width: 400px;
+            margin-left: 57%;
+        }
+
+        footer {
+            position: relative;
+            width: 100vw;
+            height: 357px;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+
+            background-image: url(../../../shared/assets/png/bg_footer_history.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10.8%;
+            box-sizing: border-box;
+
+
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                margin: -95px;
+
+                img {
+                    width: 100%;
+                    width: 601px;
+                    margin: 0;
+                }
+
+                span {
+                    color: #ffffff;
+                    font-size: 23px;
+                    font-weight: 700;
+                    margin-left: 10px;
+                    margin-top: 20px;
+                }
+            }
+
+            .footer_btn {
+                z-index: 1;
+                margin: 0;
+            }
+        }
+    }
+
+    footer::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1;
+    }
+
+    footer>div {
+        z-index: 2;
+    }
 }

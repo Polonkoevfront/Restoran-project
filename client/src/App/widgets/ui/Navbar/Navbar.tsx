@@ -30,7 +30,7 @@ export const Navbar = () => {
 
           <div className={cls.contact_block}>
             <Link to="/menu2">
-              <img src={cart} alt="" />
+              <img className={cls.cart} src={cart} alt="" />
             </Link>
             <img className={cls.line} src={line} alt="" />
             <div className={cls.contact_txt}>

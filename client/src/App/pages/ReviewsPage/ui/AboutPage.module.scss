@@ -98,3 +98,219 @@
         }
     }
 }
+
+@media (width: 1400px) {
+
+    .reviews {
+        width: 100%;
+        height: 1600px;
+        border: 1px solid rgb(0, 0, 0);
+
+        background-image: url(../../../shared/assets/png/reviews.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .arrow_left {
+            display: flex;
+            flex-direction: column;
+            margin-left: -53px;
+            margin-top: 10px;
+
+            span {
+                color: $outline-color;
+                font-size: 15px;
+                font-weight: 500;
+            }
+
+            img {
+                width: 40px;
+                margin-left: 3px;
+            }
+        }
+
+        .arrow_right {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-left: 1285px;
+            margin-top: -60px;
+
+            span {
+                color: $outline-color;
+                font-size: 15px;
+                font-weight: 500;
+            }
+
+            img {
+                width: 40px;
+                margin-left: 3px;
+            }
+        }
+
+        .about_logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $outline-color;
+            margin-top: 40px;
+        }
+
+        .text_about {
+            color: $outline-color;
+            position: relative;
+            margin-top: 80px;
+
+            .text1 {
+                text-align: start;
+                float: left;
+                margin-left: 260px;
+            }
+
+            span {
+                display: block;
+            }
+
+            img {
+                width: 160px;
+                position: absolute;
+                margin-left: 177px;
+                margin-top: -140px;
+            }
+
+            .text2 {
+                float: left;
+                text-align: end;
+                margin-left: -208px;
+                margin-top: 20%;
+
+                img {
+                    width: 200px;
+                    position: absolute;
+                    margin-left: -340px;
+                    margin-top: -52px;
+                }
+            }
+
+            .text3 {
+                font-weight: 500;
+                text-align: center;
+                float: right;
+                margin-top: 85px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+
+    .reviews {
+        width: 100%;
+        height: 100vh;
+        border: 1px solid rgb(0, 0, 0);
+        background-image: url(../../../shared/assets/png/reviews.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+
+        position: relative;
+
+        .arrows_block {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 40px;
+            pointer-events: none;
+
+            .arrow_left,
+            .arrow_right {
+                display: flex;
+                flex-direction: column;
+                pointer-events: auto;
+                position: absolute;
+
+                span {
+                    display: block;
+                    color: $outline-color;
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+
+                img {
+                    width: 40px;
+                }
+            }
+
+            .arrow_left {
+                left: 20px;
+                text-align: left;
+                margin-left: 0;
+                margin-top: 0;
+            }
+
+            .arrow_right {
+                right: 20px;
+                text-align: right;
+                margin-right: 0;
+                margin-top: 0;
+            }
+        }
+
+        .about_logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $outline-color;
+            margin-top: 40px;
+        }
+
+        .text_about {
+            color: $outline-color;
+            position: relative;
+            margin-top: 80px;
+
+            .text1 {
+                text-align: start;
+                float: left;
+                margin-left: 260px;
+            }
+
+            span {
+                display: block;
+            }
+
+            img {
+                width: 160px;
+                position: absolute;
+                margin-left: 177px;
+                margin-top: -140px;
+            }
+
+            .text2 {
+                float: left;
+                text-align: end;
+                margin-left: -208px;
+                margin-top: 20%;
+
+                img {
+                    width: 200px;
+                    position: absolute;
+                    margin-left: -340px;
+                    margin-top: -52px;
+                }
+            }
+
+            .text3 {
+                font-weight: 500;
+                text-align: center;
+                float: right;
+                margin-top: 85px;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {}
